@@ -10,5 +10,5 @@ This project demonstrates how to integrate Pixi.js and Skia for rendering and ex
 ## Installation
 1. Clone this repository.
 2. Install dependencies:
-   ```bash
    npm install
+3. npm start for starting app
