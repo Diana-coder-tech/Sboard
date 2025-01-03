@@ -1,0 +1,25 @@
+{
+    "name": "pixi-skia-app",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "An app using Pixi.js and Skia for rendering and PDF export.",
+    "scripts": {
+        "build": "rollup -c",
+        "start": "http-server -c-1 ."
+    },
+    "dependencies": {
+        "@pixi/utils": "^7.4.2",
+        "canvaskit-wasm": "^0.39.1",
+        "http-server": "^14.1.1",
+        "url": "^0.11.4"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^28.0.2",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "@rollup/plugin-typescript": "^8.5.0",
+        "pixi.js-legacy": "^7.4.2",
+        "rollup": "^3.29.5",
+        "rollup-plugin-copy": "^3.5.0",
+        "rollup-plugin-polyfill-node": "^0.13.0"
+    }
+}

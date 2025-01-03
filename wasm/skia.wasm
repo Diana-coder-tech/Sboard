@@ -1,0 +1,11 @@
+import CanvasKitInit from 'canvaskit-wasm';
+
+CanvasKitInit().then((CanvasKit) => {
+  // CanvasKit готов к использованию
+  const surface = CanvasKit.MakeCanvasSurface('canvas-id');
+  const canvas = surface.getCanvas();
+  
+  canvas.clear(CanvasKit.Color(255, 255, 255, 1.0)); // Белый фон
+  canvas.drawCircle(100, 100, 50, new CanvasKit.Paint());
+  surface.flush();
+});
